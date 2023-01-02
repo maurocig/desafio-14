@@ -68,6 +68,8 @@ router.get('/info', compression(), async (req, res) => {
     folder: process.cwd(),
     cpus: cpus,
   };
+
+  // console.log(info);
   res.render('info.hbs', { info });
 });
 
